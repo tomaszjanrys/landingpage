@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+ 
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+body{
+   background-image: linear-gradient(to left, rgb(1, 17, 36),rgb(3, 15, 70));
+}
+/*menu*/
+.menu {
+    border: 1px solid black;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+
+    display: flex;
+    
+}
+li{
+    background-image:  linear-gradient(to top, rgb(255, 64, 64), rgb(250, 47, 47));;
+    border-radius: 1em;
+   
+   
+    margin: .5em;
+    padding: .5em;
+
+}
+
+
+a{ 
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: rgb(10, 10, 10);
+}
+/*end - menu*/
+
+/*main section*/
+.container{
+    align-items: center;
+ 
+   background-size: cover;
+   background-color: rgba(255, 255, 255, 0.671);
+   background-image: url(./images/vege.jpg);
+   background-blend-mode: lighten;
+ 
+
+    display: flex;
+    flex-direction: column;
+    height: 40em;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+
+.box-one{
+
+    background-image:linear-gradient(to top , rgb(238, 236, 128),rgb(246, 214, 153));
+  
+    height: 50%;
+    position: relative;
+    width: 60%;
+}
+.description{
+    border: 5px dotted red;
+    border-radius: 1em;
+    
+    margin-right: 2em;
+    padding: 1em;
+    float: right;
+    
+    width: 40%;
+   
+  
+}
+.description > p{
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 8.5em;
+    text-align: justify;
+    overflow: hidden;
+    word-spacing: .3em;
+    word-wrap: break-word;
+  
+
+}
+h1 > p{
+color: teal;
+font-family: 'Gloria Hallelujah', cursive;
+text-shadow:  rgb(3, 70, 70) .01em .01em .01em;
+    
+    font-size: 3.5em;
+    
+}
+.food{
+    left: 25%;
+    position: absolute;
+    top: 25%;
+    transform:translate(-25%,15%);
+    width: 15em;
+    z-index: 999;
+
+}
+
+.box-two{
+    background:linear-gradient(-19deg, rgb(30, 48, 82) 0%,rgb(11, 13, 19) 50%, rgb(25, 64, 109) 50%, rgb(52, 156, 241) 100%);
+    background-color: ivory;
+    display: flex;
+    height: 50%;
+    margin-bottom: 1%;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+   
+}
+.form-box{
+    align-content: center;
+    background:linear-gradient(-30deg , rgba(255, 255, 255, 0.246), rgba(255, 255, 255, 0.65));
+    border-radius: 1em;
+
+    margin: 10% 0 10% 0;
+    height:auto;
+    width: 90%;
+   
+
+  
+
+}
+.label-1{
+    font-size: 2em;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgb(255, 157, 0);
+    text-shadow: 1.4px 1px 1px black;
+    word-spacing: .1em;
+    display: block;
+  
+   
+   
+   
+
+}
+.input-1{
+    border: .5em solid rgba(255, 255, 255, 0.198);
+    background-color: rgba(204, 192, 70, 0.582) ;
+    border-radius: 1em;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    height: 3em;
+    text-align: center;
+    width: 60%;
+    
+}
+.btn-1{
+    background: linear-gradient(to top, rgb(251, 96, 96), rgb(250, 47, 47));;
+    border: none;
+    height: 3em;
+    border-radius: 1em;
+    width: 30%;
+    
+}
+.btn-1:hover {
+    background: linear-gradient(to top, rgb(248, 194, 194), rgb(243, 156, 156));;
+}
+.foo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+ 
+    padding: .5em;
+    position: relative;
+}
+.nr-tel{
+color: rgb(159, 250, 41);
+font-size: 4em;
+margin-left: 1em;
+
+
+
+}
+.tel-obraz{
+    
+    animation: tel infinite;
+    animation-duration: 2s; 
+    animation-timing-function: linear ease;
+    height: 3.5em;
+    position: absolute;
+    width: 3.5em;
+    
+
+}
+
+
+@keyframes tel {
+0% {top: 10px;}
+10% {top: 20px;}
+15% {top: 19px;}
+20% {top: 20px;}
+25% {top: 18px;}
+30% {top: 20px;}
+50% {top: 10px;}
+}
